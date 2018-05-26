@@ -1,0 +1,7 @@
+[package]
+name = "vita"
+version = "0.1.0"
+authors = ["Martin Larralde <martin.larralde@ens-cachan.fr>"]
+
+[dependencies]
+psp2-sys = { git = "https://github.com/vita-rust/psp2-sys", features = ["kernel"] }
