@@ -303,12 +303,12 @@ impl<'a> DebugScreen<'a> {
                 continue;
             }
 
-            if (self.coord_x + self.font.width > SCREEN_WIDTH) {
+            if (self.coord_x + self.font.width) > SCREEN_WIDTH {
                 self.coord_y += self.font.size_h;
                 self.coord_x = 0;
             }
 
-            if (self.coord_y + self.font.height > SCREEN_HEIGHT) {
+            if (self.coord_y + self.font.height) > SCREEN_HEIGHT {
                 self.coord_x = 0;
                 self.coord_y = 0;
             }
@@ -342,7 +342,7 @@ impl<'a> DebugScreen<'a> {
                         mask = 1 << 7;
                     }
 
-                    vram[row * SCREEN_FB_WIDTH + col] = if (font[0] & mask == 0) {
+                    vram[row * SCREEN_FB_WIDTH + col] = if (font[0] & mask) == 0 {
                         self.color_bg
                     } else {
                         self.color_fg

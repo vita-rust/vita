@@ -5,3 +5,4 @@ authors = ["Martin Larralde <martin.larralde@ens-cachan.fr>"]
 
 [dependencies]
 psp2-sys = { git = "https://github.com/vita-rust/psp2-sys" }
+vita-mutex = { git = "https://github.com/vita-rust/vita-mutex" }
