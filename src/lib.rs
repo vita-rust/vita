@@ -9,5 +9,4 @@ extern crate psp2_sys;
 extern crate vita_mutex;
 
 pub mod debug;
-pub mod alloc;
 pub mod sync;

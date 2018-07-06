@@ -1,2 +1,4 @@
-pub use vita_mutex::Mutex;
-pub use vita_mutex::MutexGuard;
+mod mutex;
+
+pub use self::mutex::Mutex;
+pub use self::mutex::MutexGuard;
