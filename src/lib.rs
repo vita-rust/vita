@@ -13,3 +13,4 @@ extern crate psp2_sys;
 
 pub mod debug;
 pub mod sync;
+pub mod thread;
